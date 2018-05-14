@@ -5,7 +5,7 @@ require("dotenv").config()
 
 let app = express()
 
-let redirect_uri = process.env.REDIRECT_URI || "http://localhost:8888/callback"
+let redirect_uri = "https://spotify-back-end.herokuapp.com"
 
 app.get("/login", function(req, res) {
   res.redirect("https://accounts.spotify.com/authorize?" +
